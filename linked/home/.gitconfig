@@ -1,0 +1,9 @@
+[user]
+	email = hhs19942@gmail.com
+	name = Henrik
+
+[alias]
+	lg = log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	fap = fetch --all --prune
+	s = status
+	

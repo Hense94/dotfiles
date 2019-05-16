@@ -1,0 +1,11 @@
+r:apport
+r:gnome-shell-extension-ubuntu-dock
+i:curl
+i:git
+i:gnome-tweaks
+i:chrome-gnome-shell
+i:qt5ct
+i:numix-icon-theme-circle
+i:albert
+i:sublime-text
+i:xclip

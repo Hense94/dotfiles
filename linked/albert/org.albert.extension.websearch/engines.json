@@ -1,0 +1,8 @@
+[
+    {
+        "iconPath": ":google",
+        "name": "Google",
+        "trigger": "gg ",
+        "url": "https://www.google.com/search?q=%s"
+    }
+]

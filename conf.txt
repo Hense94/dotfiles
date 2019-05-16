@@ -1,0 +1,8 @@
+Themes
+  Applications: Numix
+  Cursor	Breeze_cursors
+  Icons		Numix-Circle
+
+Extentions
+  Caffeine
+  Workspace matrix
