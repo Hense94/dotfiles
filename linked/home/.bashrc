@@ -132,3 +132,6 @@ export PATH=~/.local/bin/:$PATH
 
 
 . ~/dotfiles/.scripts/z.sh
+
+# added by pipx (https://github.com/pipxproject/pipx)
+export PATH="/home/hense/.local/bin:$PATH"
