@@ -1,7 +1,7 @@
 alias update='sudo apt-get update && sudo apt-get upgrade'
 alias clip='xclip -sel c'
 
-alias clipget="curl https://clipboard.antonchristensen.net && echo ''"
+alias clipget="curl https://clipboard.antonchristensen.net"
 clipset() {
     if [ -z "$1" ]
     then
