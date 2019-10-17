@@ -2,6 +2,7 @@
 ~/dotfiles/linked/home/.gitconfig:~/.gitconfig
 ~/dotfiles/linked/home/.inputrc:~/.inputrc
 ~/dotfiles/linked/home/.bash_aliases:~/.bash_aliases
-~/dotfiles/linked/qt5ct/qt5ct.conf:~/.config/qt5ct/qt5ct.conf
-~/dotfiles/linked/albert/albert.conf:~/.config/albert/albert.conf
-~/dotfiles/linked/albert/org.albert.extension.websearch/engines.json:~/.config/albert/org.albert.extension.websearch/engines.json
+~/dotfiles/linked/home/.config/qt5ct/qt5ct.conf:~/.config/qt5ct/qt5ct.conf
+~/dotfiles/linked/home/.config/albert/albert.conf:~/.config/albert/albert.conf
+~/dotfiles/linked/home/.config/albert/org.albert.extension.websearch/engines.json:~/.config/albert/org.albert.extension.websearch/engines.json
+~/dotfiles/linked/home/.config/autostart/albert.desktop:~/.config/autostart/albert.desktop

@@ -97,7 +97,9 @@ echo -e "${GREEN}done!${NC}"
 echo ""
 #NVM and node
 NVM_INSTALLED=$(command -v nvm 2> /dev/null | grep "nvm")
-if [ "" == "$NVM_INSTALLED" ]; then
+#NVM_INSTALLED=$(nvm -v 2> /dev/null | grep "nvm")
+echo $NVM_INSTALLED
+if [ "nvm" == "$NVM_INSTALLED" ]; then
     echo -e "${GREEN}NVM is already installed${NC}"
 else
     echo -e "${BLUE}Installing NVM...${NC}"
@@ -113,7 +115,7 @@ CHROME_INSTALLED=$(dpkg -s "google-chrome-stable" 2> /dev/null | grep "install o
 if [ "" == "$CHROME_INSTALLED" ]; then
   echo -e "${BLUE}Installing Chrome...${NC}"
   curl -L -O "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
-  sudo dpkg --install google-chrome-stable_current_amd64.deb -y
+  sudo dpkg --install google-chrome-stable_current_amd64.deb
   rm google-chrome-stable_current_amd64.deb
 else 
   echo -e "${GREEN}Chrome already installed${NC}"
