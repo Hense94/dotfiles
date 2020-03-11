@@ -1,15 +1,41 @@
 #!/bin/bash
-echo "Monitoring files:"
 
+filesInDir () {
+    local folderPath="${1%/}"
+    local files=$( ls $folderPath )
+    local filesFiltered=""
+
+    for i in $files ; do
+        if [ -d "$1/$i" ] ; then
+            filesFiltered="$filesFiltered$(filesInDir $folderPath/$i)"
+            continue
+        fi
+        if [ -f "$1/$i" ] ; then
+            filesFiltered="$filesFiltered$folderPath/$i "
+        fi
+    done
+
+    echo "$filesFiltered"
+}
+
+echo "Monitoring files:"
 monitored_files=""
 for f in "$@"
 do
-    if [ ! -f "$1" ] ; then
+    if [ -d "$f" ] ; then
+        echo "folder: $f"
+        monitored_files="$monitored_files $(filesInDir $f)"
+        shift
+        continue
+    fi
+    if [ ! -f "$f" ] ; then
         break
     fi
-    echo $1
     monitored_files="$monitored_files $f"
     shift
+done
+for f in $monitored_files ; do
+    echo "$f"
 done
 
 echo ""
@@ -32,5 +58,4 @@ do
         bash -c "$cmd"
     done
 done
-
 
